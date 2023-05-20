@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+    --primary-color: #0B2027;
+    --secondary-color: #40798C;
+    --accent1-color: #CFD7C7;
+    --accent2-color: #F6F1D1;
+
+    --heading-font:Roboto,serif;
+    --paragraph-font:Roboto,serif;
+
+    --nav-background-color: #00635D;
+    --nav-link-color: ##08A4BD;
+    --nav-hover-link-color: #446DF6;
+    --nav-hover-background-color: #00635D;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size:larger;   
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+section h2{
+    text-align: center;
+    border-bottom: 1px solid #0B2027;
+    margin: 1rem auto;
+    padding: 10px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sociallinks a{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.sociallinks img{
+    width: 30px;
+    height: 30px;
+
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: vertical;
+    background-color: whitesmoke;
+}
+
+.map{
+    margin: 1rem;
+}
+
+.details{
+    margin: 1rem;
+}
+
+p{
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-family: Roboto;
+  
+}
+
+button{
+    margin: 1rem;
+    background-color: navy;
+    color:#fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1em;
+
+    
+}
+
+.column1 {
+    width: 100%;
+}
+
+input,select,textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 90%;
+}
+
+label{
+    text-align: left;
+    margin-bottom: 0.5rem;
+  
+}
+
+ /* Style for the container */
+ .radio-container {
+    margin-bottom: 10px;
+}
+
+/* Style for the radio buttons */
+.radio-container input[type="radio"] {
+    display: none; /* Hide the default radio button */
+}
+
+/* Style for the radio button labels */
+.radio-container label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    margin-right: 10px;
+}
+
+/* Style for the checked radio button label */
+.radio-container input[type="radio"]:checked + label {
+    background-color: #42b983;
+    color: #fff;
+}
+
+/* Style for the checkbox */
+.form-item2 input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+/* Style for the checkbox label */
+.form-item2 label {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Style for the custom checkbox */
+.form-item2 label::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+/* Style for the custom checkbox when checked */
+.form-item2 input[type="checkbox"]:checked + label::before {
+    background-color: #42b983;
+    border-color: #42b983;
+}
+
+/* Style for the checkbox label text */
+.form-item2 label::after {
+    content: "✔";
+    display: none;
+    position: absolute;
+    left: 4px;
+    top: -2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Style for the checkbox label text when checked */
+.form-item input[type="checkbox"]:checked + label::after {
+    display: inline-block;
+}
+
+.employee_container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    background-color:#F6F1D1;
+}
+
+.employee_hero_title {
+    text-align: center;
+    
+}
+
+.employee_hero {
+    text-align: center;
+}
+
+.employee_hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.employee_hero p {
+    font-weight: bold;
+    margin: 5px 0;
+}
