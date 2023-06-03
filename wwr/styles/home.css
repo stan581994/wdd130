@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+    --primary-color: #0B2027;
+    --secondary-color: #40798C;
+    --accent1-color: #CFD7C7;
+    --accent2-color: #F6F1D1;
+
+    --heading-font:Roboto,serif;
+    --paragraph-font:Roboto,serif;
+
+    --nav-background-color: #00635D;
+    --nav-link-color: ##08A4BD;
+    --nav-hover-link-color: #446DF6;
+    --nav-hover-background-color: #00635D;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size:larger;   
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+.hero {
+    position: relative;
+  }
+
+.hero img{
+    width: 100%;
+}
+  
+.hero h1 {
+    position: absolute;
+    top: 2%;
+    left:5%;
+    color: #f0f0f0;
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 85%;
+    font-family: var(--heading-font);
+}
+
+.hero article{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    width: 90%;
+    height: 35%;
+    overflow: auto;
+}
+
+.hero article button{
+    position: absolute;
+    top: 400%;
+    left: 30%;
+
+}
+
+.hero article p{
+
+    margin-right: 200px;
+}
+.hero article img{
+    float: right;
+    margin-left: 20px;
+    width: 300px;
+}
+
+section h2{
+    text-align: center;
+    border-bottom: 1px solid #0B2027;
+    margin: 1rem auto;
+    padding: 10px;
+  
+}
+
+.history-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-container > *{
+    flex:1;
+    margin: 10px;
+    max-width: 960px;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+.image-grid img{
+    width: 200px;
+    height: auto;
+}
+
+.image-grid figure{
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+}
+
+.image-grid figcaption{
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sociallinks a{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.sociallinks img{
+    width: 30px;
+    height: 30px;
+
+}
+
+
+ /* Button Styles */
+ .hero article button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    background-color: #023005;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3ea515;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #555;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.intro-container button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff5f6d;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Add this line */
+}
+
+.intro-container button:hover {
+    background-color: #ff3b4d;
+}

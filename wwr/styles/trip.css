@@ -64,11 +64,11 @@ h1,h2,h3,h4,h5,h6 {
 .hero h1 {
     position: absolute;
     left: 5%;
-    top: 2%;
-    background-color: rgba(0, 0, 0, 0.8);
+    top: 2%;    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px;
-    font-size: 24px;
+    font-size: 40px;
     text-align: center;
     width: 800px;
     font-family: var(--heading-font);
@@ -153,4 +153,23 @@ button:hover {
 
 .tour-column button {
     margin-top: 10px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sociallinks a{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.sociallinks img{
+    width: 30px;
+    height: 30px;
+
 }
